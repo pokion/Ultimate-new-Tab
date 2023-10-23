@@ -9,4 +9,5 @@ const cssVariables = ['--grid-height', resolution[0] + 'px',
 					  '--grid-height-count', (resolution[0] / boxSize)]
 setVariableCss(cssVariables)
 
-dragElement(document.querySelector('.box'))
+let linkComp = new LinkComponent("./assets/yt.png", 'https://fonts.google.com/icons?icon.query=image');
+console.log(linkComp.create());

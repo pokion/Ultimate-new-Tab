@@ -1,7 +1,8 @@
 :root{
 	--main-color: rgba(254, 254, 254, .3);
 	--second-color: rgba(12, 21, 34, .4);
-	--box-size: 60px;
+	--text-color: #FEFEFE;
+	--box-size: 68px;
 	--box-gap: 8px;
 	--grid-height: 100vh;
 	--grid-width: 100vw;
@@ -12,6 +13,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	font-size: 16px;
 }
 body{
 	background-image: url(./../assets/bg.jpg);
@@ -39,11 +41,10 @@ body{
 }
 .box{
 	height: var(--box-dimensions);
-	width: calc(var(--box-dimensions) *2);
+	width: var(--box-dimensions);
 	padding: var(--box-gap);
 	box-sizing: border-box;
 	text-align: center;
-	background-color: whitesmoke;
 	grid-column-start: 5;
 	grid-column-end: 6;
 	grid-row-start: 5;

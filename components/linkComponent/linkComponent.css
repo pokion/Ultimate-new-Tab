@@ -1,0 +1,17 @@
+.linkComponent > a > .favicon{
+	height: 70%;
+}
+.linkComponent > a > .favicon > img{
+	height: 100%;
+}
+.linkComponent > a > .text{
+	height: 30%;
+	color: var(--text-color);
+}
+.linkComponent > a{
+	text-decoration: none;
+}
+.linkComponent{
+	cursor: pointer;
+	user-select: none;
+}

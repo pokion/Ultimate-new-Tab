@@ -19,7 +19,7 @@ function getCssVariables(variables){
 	return cssVariables;
 }
 
-//styles property is an Arraty that contain object
+//styles property is an Array that contain object
 /*
 	object must contain {target: (pointer to dom element), 
 						 property: (property of css, only js notation),
