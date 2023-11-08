@@ -7,6 +7,10 @@
 	grid-row-start: 5;
 	grid-row-end: 7;
 }
+.complete{
+	color: var(--main-color);
+	
+}
 .toDoList > .toDoListInner{
 	box-sizing: border-box;
 	background-color: var(--second-color);
