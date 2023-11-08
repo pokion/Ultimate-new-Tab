@@ -42,8 +42,15 @@
 }
 .toDoList > .toDoListInner > .list > ul > li{
 	padding: 5px;
+	display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
 }
 .toDoList > .toDoListInner > .addInput{
+	padding-top: 10px;
 	display: flex;
 	flex-direction: row;
 }
@@ -54,7 +61,15 @@
 	outline: none;
 	border-bottom: 1px solid var(--main-color);
 	color: var(--text-color);
+	padding-left: 10px;
 }
 .toDoList > .toDoListInner > .addInput > input:focus{
 	border-bottom: 2px solid var(--text-color);
+}
+.toDoList > .toDoListInner > .addInput > input:focus ~ span{
+	color: var(--text-color);
+}
+.toDoList > .toDoListInner > .addInput > span{
+	color: var(--main-color);
+	cursor: pointer;
 }

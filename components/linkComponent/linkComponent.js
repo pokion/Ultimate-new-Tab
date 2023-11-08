@@ -20,7 +20,7 @@ class LinkComponent{
         return name;
     }
 
-	create(elementToAppend){
+	create(){
 		let divBox 	   = document.createElement('div');
         divBox.classList.add('box', 'linkComponent');
 		let a 	   	   = document.createElement('a');
