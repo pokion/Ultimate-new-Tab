@@ -1,8 +1,10 @@
 :root{
 	--main-color: rgba(254, 254, 254, .3);
 	--second-color: rgba(12, 21, 34, .4);
+	--scroll-bg: rgba(254, 254, 254, .3);
+	--border-radius: 8px;
 	--text-color: #FEFEFE;
-	--box-size: 68px;
+	--box-size: 80px;
 	--box-gap: 8px;
 	--grid-height: 100vh;
 	--grid-width: 100vw;
@@ -14,6 +16,17 @@
 	margin: 0px;
 	padding: 0px;
 	font-size: 16px;
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: var(--scroll-bg);
+  border-radius: 2px; 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 2px; 
 }
 body{
 	background-image: url(./../assets/bg.jpg);
