@@ -10,18 +10,54 @@
 	<link rel="stylesheet" type="text/css" href="./assets/icons/weather-icons-wind.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./components/linkComponent/linkComponent.css">
+	<link rel="stylesheet" type="text/css" href="./components/toDoListComponent/toDoListComponent.css">
 </head>
 <body>
 	<div id="grid">
 		
 	</div>
 	<div id="widgets">
-		<p>To jest przykładowy tekst</p>
+
+		<div class="box toDoList" grid-height="2" grid-width="2">
+			<div class="toDoListInner">
+				<div class="title">
+					<p>ToDo List</p>
+				</div>
+				<div class="list">
+					<ul>
+						<li>
+							<span class="material-symbols-outlined">
+								check_box_outline_blank
+							</span> 
+							Go To Gym
+						</li>
+						<li><span class="material-symbols-outlined">
+								check_box_outline_blank
+							</span> 
+						Complete assigment</li>
+						<li><span class="material-symbols-outlined">
+								check_box_outline_blank
+							</span> Get grocery</li>
+						<li><span class="material-symbols-outlined">
+								check_box_outline_blank
+							</span> Write poem</li>
+					</ul>
+				</div>
+				<div class="addInput">
+					<input type="text" placeholder="Add task">
+					<span class="material-symbols-outlined">
+						add
+					</span>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<script type="text/javascript" src="./js/cssUtils.js"></script>
 	<script type="text/javascript" src="./js/stringFunctions.js"></script>
 	<script type="text/javascript" src="./components/linkComponent/linkComponent.js"></script>
+	<script type="text/javascript" src="./components/toDoListComponent/toDoListComponent.js"></script>
 	<script type="text/javascript" src="./js/grid.js"></script>
 	<script type="text/javascript" src="./js/main.js"></script>
 </body>
