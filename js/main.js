@@ -10,7 +10,7 @@ const cssVariables = ['--grid-height', resolution[0] + 'px',
 setVariableCss(cssVariables)
 
 chrome.storage.local.get(['storage']).then((result) => {
-    window.storage = new Storage(result.storage);
+    window.storage = new Storage(result.storage, 'storage');
 });
 
 document.querySelector('#widgets').append(new ToDoListComponent('asd', {title: 'toDoListEssa', list: ['name1', 'name2', 'name3']}).create())
