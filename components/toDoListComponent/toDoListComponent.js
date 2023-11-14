@@ -5,7 +5,7 @@ class ToDoListComponent{
 			list: Array(name: text;);
 		}
 	*/
-	constructor(id, tasks){
+	constructor({id, tasks}){
 		if(!id){
 			throw new Error('Id must be included.');
 		}
