@@ -10,7 +10,18 @@ const cssVariables = ['--grid-height', resolution[0] + 'px',
 setVariableCss(cssVariables)
 
 chrome.storage.local.get(['storage']).then((result) => {
-    window.storage = new Storage(result.storage, 'storage');
+    let data = result.storage;
+    if(!result.storage){
+        data = new Array();
+    }
+    window.storage = new Storage(data, 'storage');
 });
 
-document.querySelector('#widgets').append(new ToDoListComponent('asd', {title: 'toDoListEssa', list: ['name1', 'name2', 'name3']}).create())
+chrome.storage.local.get(['elements']).then((result) => {
+    let data = result.elements;
+    if(!result.elements){
+        data = new Array();
+    }
+    window.elementsData = new Storage(data, 'elements');
+    window.element      = new Elements('#widgets');
+});

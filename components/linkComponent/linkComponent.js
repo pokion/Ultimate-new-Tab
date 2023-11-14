@@ -1,5 +1,5 @@
 class LinkComponent{
-	constructor(favicon, link){
+	constructor({favicon, link}){
 		if(!link || link.length < 6){
 			throw new Error('Link must be included.');
 		}
